@@ -45,7 +45,7 @@ int main(void) {
 }
 ```
 
-first, remove everything the easy stuff:
+first, remove the easy stuff:
 - ```ExitProcess```, for obvious reasons
 - ```CloseHandle```, we don't need handle cleanup because the machine is about to BSOD
 - we never check ```status``` either, so that can go
