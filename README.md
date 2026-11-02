@@ -184,3 +184,5 @@ main() {
 #define G(f)(GetProcAddress(LoadLibraryA("ntdll"),f))
 x;main(){G("RtlAdjustPrivilege")(20,1,0,&x);G("RtlSetProcessIsCritical")(1,0,0);}
 ```
+
+when compiled (with ```-std=c89```) and run as administrator, this will bsod your machine every time guaranteed *or your money back!*
